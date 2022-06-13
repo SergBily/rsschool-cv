@@ -107,12 +107,41 @@
       <section class="main__item about-me" id="about-me">
         <h3 class="main__title">Summary</h3>
         <p class="about-me__text">I want to do things that will improve the lives of others.
-          I want to be a part of the team that creates meaningful technology products for 
+          I want to be a part of the team that creates meaningful technology products for
           society or build a team of like-minded professionals wishing to improve the world.
           I've got energy, self-motivated and  I open to new things.
-          I'm capable of focusing all my free time to work, that will make me smarter and 
+          I'm capable of focusing all my free time to work, that will make me smarter and
           stronger and help me achieve the desired goals.
         </p>
+      </section>
+
+      <section class="main__item code" id="code">
+        <h3 class="main__title">Code Example</h3>
+        <p class="code__text">
+          In this kata, you must define the Array.reduce method.<br>
+          The reduce method goes through each element of an array, applies the function
+          to whatever the function returned last, and returns the last outcome. On the
+          first iteration, it should pass the initial value to the function, as well as
+          the first element of the array. If no initial value is passed, skip to the first
+          element of the array.
+        </p>
+        <pre class="code__code" data-language="html">
+          <code>
+            Array.prototype.reduce = function(process, initial) {
+              let res;
+              if(initial === undefined) {
+                (typeof this[0] === 'number') ? res = 0 : res = '';
+              } else {
+                res = initial;
+              }
+              
+              for (let i = 0; i < this.length; i += 1) {
+                res = process(res, this[i], i, this);
+              }
+              return res;
+            }
+          </code>
+        </pre>
       </section>
     </main>
   </div>
