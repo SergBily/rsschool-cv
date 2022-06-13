@@ -225,3 +225,13 @@ body {
   background-image: linear-gradient(135deg, red , orange, yellow, green, blue, indigo, violet);
   opacity: 0.8;
 }
+
+.about-me {
+  grid-area: 1/2/2/5;
+}
+
+.about-me__text,
+.code__text {
+  font-size: 1.5em;
+  line-height: 2;
+}
