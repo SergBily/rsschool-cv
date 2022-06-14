@@ -38,6 +38,7 @@ body {
   top: 0;
   width: inherit;
   background-color: rgba(102, 178, 255, 0.5);
+  z-index: 10;
 }
 
 .nav__menu {
@@ -172,6 +173,19 @@ body {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+.contacts__img {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .contants__text {
@@ -240,11 +254,11 @@ body {
   cursor: default;
 }
 
-.about-me {
+.summary {
   grid-area: 1/2/2/5;
 }
 
-.about-me__text,
+.summary__text,
 .code__text {
   font-size: 1.5em;
   line-height: 2;
@@ -493,7 +507,7 @@ body {
     grid-area: 1/1/2/5;
   }
 
-  .about-me {
+  .summary {
     grid-area: 2/1/3/5;
   }
 
