@@ -354,3 +354,66 @@ body {
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
 }
+
+.education {
+  grid-area: 4/1/5/5;	
+}
+
+.education__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
+  box-shadow: 1px 1px 5px var(--blue), 1px 1px 5px var(--blue);
+}
+
+.education__container:hover .education__title {
+  animation: title-ducation 1s ease-in-out infinite;
+  -webkit-animation: title-ducation 1s ease-in-out infinite;
+}
+
+.education__container:hover {
+  box-shadow: 1px 1px 15px var(--blue), 1px 1px 15px var(--blue);
+}
+
+@keyframes title-ducation {
+  0% { transform:scale(1.0) ; -webkit-transform:scale(1.0) ; -moz-transform:scale(1.0) ; -ms-transform:scale(1.0) ; -o-transform:scale(1.0) ; }
+  50% { transform:scale(1.1) ; -webkit-transform:scale(1.1) ; -moz-transform:scale(1.1) ; -ms-transform:scale(1.1) ; -o-transform:scale(1.1) ; }
+  100% { transform: scale(1.0); -webkit-transform: scale(1.0); -moz-transform: scale(1.0); -ms-transform: scale(1.0); -o-transform: scale(1.0); }
+}
+.education__education {
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+
+.education__courses {
+  align-self: center;
+}
+
+.education__language {
+  align-self: flex-end;
+  margin-right: 50px;
+}
+
+.list__link:hover {
+  text-shadow: 2px 2px 2px var(--violet);
+}
+
+.education__text,
+.list__item {
+  font-size: 1.5em;
+  line-height: 2;
+}
+
+.education__title {
+  font-size: 2em;
+  color: var(--title);
+}
+
+.list__item {
+  padding-left: 50px;
+}
+
+.list__link {
+  color: var(--violet);
+}
