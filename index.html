@@ -1,12 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My CV</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>My CV</title>
 </head>
 <body>
-	
+  <div class="wrapper">
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a href="#contacts"
+             class="nav__link">Contacts</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills"
+             class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#summary"
+             class="nav__link">summary</a>
+        </li>
+        <li class="nav__item">
+          <a href="#code"
+             class="nav__link">Code</a>
+        </li>
+        <li class="nav__item">
+           <a href="#project"
+              class="nav__link">Project</a>
+        </li>
+        <li class="nav__item">
+          <a href="#education"
+             class="nav__link">Education</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="header__item icon">
+        <figure>
+          <img class="icon__img"
+               src="./assets/img/icon_1200.png"
+               alt="My icon" width="400" height="523">
+        </figure>
+      </div>
+      <div class="header__item name">
+        <h1 class="name__name">Sergey Belyavsky</h1>
+        <h2 class="name__prof">Front-end developer</h2>
+      </div>
+      <ul class="header__item contacts" id="contacts">
+        <li class="contacts__item contacts__item--container">
+          <a class="contacts__link"
+             href="tel:+375(44)5608697"
+             target="_blank">
+            <img class="contacts__img"
+                 src="https://img.icons8.com/fluency/48/000000/phone.png" 
+                 alt="Telefon" width="48" height="48"></a>
+            <p class="contants__text">+375 (44) 5608697</p>
+          </li>
+        <li class="contacts__item contacts__item--container">
+          <a class="contacts__link"
+             href="mailto:SergBily.dev@gmail.com"
+             target="_blank">
+            <img class="contacts__img"
+                 src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/48/000000/external-email-interface-kiranshastry-lineal-color-kiranshastry-1.png"
+                 alt="Mail" width="48" height="48"></a>
+            <p class="contants__text">SergBily.dev@gmail.com</p>
+          </li>
+        <li class="contacts__item contacts__item--container">
+          <a class="contacts__link"
+             href="https://t.me/SergBily"
+             target="_blank">
+            <img class="contacts__img"
+                 src="https://img.icons8.com/color-glass/48/000000/telegram-app.png"
+                 alt="Telegram" width="48" height="48"></a>
+            <p class="contants__text">SergBily</p>
+          </li>
+        </ul>
+    </header>
+
+    <main class="main">
+      <section class="main__item skills" id="skills">
+        <h3 class="main__title">Skills</h3>
+        <ul class="skills__items">
+          <li class="skills__item skills__item-block">
+            <img class="skills__img"
+                 src="https://img.icons8.com/color/48/000000/html-5--v1.png"
+                 alt="html" width="48" height="48">
+            <p class="skills__text">Html5</p>
+          </li>
+          <li class="skills__item skills__item-block">
+            <img class="skills__img"
+                 src="https://img.icons8.com/color/48/000000/css3.png"
+                 alt="css" width="48" height="48">
+            <p class="skills__text">css3</p>
+          </li>
+          <li class="skills__item skills__item-block">
+            <img class="skills__img"
+                 src="https://img.icons8.com/color/48/000000/git.png"
+                 alt="git" width="48" height="48">
+            <p class="skills__text">git</p>
+          </li>
+          <li class="skills__item skills__item-block">
+            <img class="skills__img"
+                 src="https://img.icons8.com/plasticine/48/000000/github.png"
+                 alt="github" width="48" height="48">
+            <p class="skills__text">github</p>
+          </li>
+          <li class="skills__item skills__item-block">
+            <img class="skills__img"
+                 src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                 alt="js" width="48" height="48">
+            <p class="skills__text">java script</p>
+          </li>
+          <li class="skills__item skills__item-block">
+            <img class="skills__img"
+                 src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"
+                 alt="vs code" width="48" height="48">
+            <p class="skills__text">vs code</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__item summary" id="about-me">
+        <h3 class="main__title">Summary</h3>
+        <p class="summary__text">I want to do things that will improve the lives of others.
+          I want to be a part of the team that creates meaningful technology products for
+          society or build a team of like-minded professionals wishing to improve the world.
+          I've got energy, self-motivated and  I open to new things.
+          I'm capable of focusing all my free time to work, that will make me smarter and
+          stronger and help me achieve the desired goals.
+        </p>
+      </section>
+
+      <section class="main__item code" id="code">
+        <h3 class="main__title">Code Example</h3>
+        <p class="code__text">
+          In this kata, you must define the Array.reduce method.<br>
+          The reduce method goes through each element of an array, applies the function
+          to whatever the function returned last, and returns the last outcome. On the
+          first iteration, it should pass the initial value to the function, as well as
+          the first element of the array. If no initial value is passed, skip to the first
+          element of the array.
+        </p>
+        <pre class="code__code" data-language="html">
+          <code>
+            Array.prototype.reduce = function(process, initial) {
+              let res;
+              if(initial === undefined) {
+                (typeof this[0] === 'number') ? res = 0 : res = '';
+              } else {
+                res = initial;
+              }
+              
+              for (let i = 0; i < this.length; i += 1) {
+                res = process(res, this[i], i, this);
+              }
+              return res;
+            }
+          </code>
+        </pre>
+      </section>
+
+      <section class="main__item project" id="project">
+        <h3 class="main__title">Project</h3>
+        <ul class="project__items">
+          <li class="project__item">
+            <a class="project__link"
+               href="https://rolling-scopes-school.github.io/sergbily-JSFEPRESCHOOL/portfolio/"
+               target="_blank">
+              <img class="project__img"
+                   src="./assets/img/project-portfolio.png"
+                   alt="project-portfolio"
+                   width="320"
+                   height="242">
+            </a>
+            <p class="project__description">Portfolio</p>
+          </li>
+          <li class="project__item">
+            <a class="project__link" 
+               href="https://sergbily.github.io/virtual-keyboard/"
+               target="_blank">
+              <img class="project__img"
+                   src="./assets/img/project-virtual-keyboard.png"
+                   alt="project-virtual-keyboard"
+                   width="320"
+                   height="331">
+            </a>
+            <p class="project__description">Virtual keyboard</p>
+          </li>
+          <li class="project__item">
+            <a class="project__link"
+               href="https://sergbily-memory-game.netlify.app"
+               target="_blank">
+              <img class="project__img"
+                   src="./assets/img/project-memory-game.png"
+                   alt="project-memory-game"
+                   width="320"
+                   height="242">
+            </a>
+            <p class="project__description">Memory game</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__item education" id="education">
+        <h3 class="main__title">Education</h3>
+        <div class="education__container">
+        <div class="education__education">
+          <h4 class="education__title">University:</h4> 
+          <p class="education__text">Belarusian State University, lawyer</p>
+        </div>
+        <div class="education__courses">
+          <h4 class="education__title">Courses:</h4>
+          <ul class="education__list">
+            <li class="list__item">JavaScript learn on
+              <a class="list__link"
+                 href="https://learn.javascript.ru"
+                 target="_blank"
+                 rel="noopener noreferrer">learn.javascript.ru
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="list__link"
+                  href="https://rs.school"
+                  target="_blank">RS school
+              </a> Course «JavaScript/Front-end. Stage 1»
+            </li>
+            <li class="list__item">HTML and CSS on
+              <a class="list__link"
+                 href="https://www.w3schools.com/"
+                 target="_blank"
+                 rel="noopener noreferrer">www.w3schools.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="education__language">
+          <h4 class="education__title">Languages:</h4>
+          <ul class="education__list">
+            <li class="list__item">English: A2</li>
+            <li class="list__item">Russian: Native</li>
+          </ul>
+        </div>
+      </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="course">
+        <a class="footer__link"
+           href="https://rs.school/js/"
+           target="_blank">
+           <img class="footer__img"
+                src="./assets/svg/rs_school_js.svg" 
+                width="80"
+                height="60"
+                alt="rs school">
+        </a>
+      </div>
+      <div class="year">2021</div>
+      <div class="copyright">
+        <a class="contacts__link"
+         href="https://github.com/SergBily"
+         target="_blank">
+         <img class="footer__img"
+              src="https://img.icons8.com/color/48/000000/github--v1.png"
+              width="48"
+              height="48"
+              alt="github">
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
