@@ -235,7 +235,7 @@ body {
 .skills__items {
   display: flex;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -294,8 +294,9 @@ body {
 
 .project__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project__item {
